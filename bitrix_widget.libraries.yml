@@ -1,0 +1,6 @@
+bitrix-widget-button:
+  css:
+    component:
+      assets/css/components/bitrix-widget-button.css: {}
+  js:
+    assets/js/bitrix-widget-button.js: {}

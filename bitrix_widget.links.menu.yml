@@ -1,0 +1,6 @@
+bitrix_widget.bitrix_widget_settings:
+  title: Bitrix widget settings
+  description: Form to configure bitrix widget settings.
+  parent: system.admin_config_system
+  route_name: bitrix_widget.bitrix_widget_settings
+  weight: 10

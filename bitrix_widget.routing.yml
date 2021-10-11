@@ -1,0 +1,7 @@
+bitrix_widget.bitrix_widget_settings:
+  path: '/admin/config/system/bitrix-widget-settings'
+  defaults:
+    _title: 'Bitrix widget settings'
+    _form: 'Drupal\bitrix_widget\Form\BitrixWidgetSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
