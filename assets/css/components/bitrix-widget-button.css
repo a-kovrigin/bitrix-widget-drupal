@@ -1,4 +1,9 @@
 /* ------------------------- Bitrix widget button ------------------------- */
+:root {
+  --bitrix-widget-button-color: 255, 243, 0;
+  --bitrix-widget-button-icon-color: rgb(0, 0, 0);
+}
+
 .bitrix-widget-button {
   position: fixed;
   right: 56px;
@@ -8,8 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff300;
-  box-shadow: 0 0 0 6px rgb(255 243 0 / 20%);
+  background-color: rgb(var(--bitrix-widget-button-color));
+  box-shadow: 0 0 0 6px rgb(var(--bitrix-widget-button-color), .2);
   border-radius: 50%;
   cursor: pointer;
   z-index: 10150;
@@ -22,7 +27,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  border: 1px solid #fff300;
+  border: 1px solid rgb(var(--bitrix-widget-button-color));
   animation: widgetPulse infinite 1.5s;
   -webkit-animation: widgetPulse infinite 1.5s;
   border-radius: 50%;
@@ -30,14 +35,14 @@
 
 @keyframes widgetPulse {
   50% {
-    -webkit-transform:scale(1,1);
-    transform:scale(1,1);
-    opacity:1;
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    opacity: 1;
   }
   100% {
-    -webkit-transform:scale(2,2);
-    transform:scale(2,2);
-    opacity:0
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
+    opacity: 0;
   }
 }
 
